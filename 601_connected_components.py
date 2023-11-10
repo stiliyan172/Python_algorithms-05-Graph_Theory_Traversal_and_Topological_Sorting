@@ -26,3 +26,4 @@ for node in range(nodes):
     component = []
     dfs(node, graph, visited, component)
     print(f'Connected component: {" ".join(str(x) for x in component)}')
+
