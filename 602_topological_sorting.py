@@ -27,6 +27,7 @@ for _ in range(nodes):
     node = line_parts[0].strip()
     children = line_parts[1].strip().split(", ") if line_parts[1] else []
     graph[node] = children
+
 
 dependencies_by_node = find_dependencies(graph)
 sorted_nodes = []
