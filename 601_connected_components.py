@@ -17,8 +17,7 @@ def dfs(node, graph, visited, component):
     for child in graph[node]:
         dfs(child, graph, visited, component)
 
-    component.append(node)
-
+    component.append(node)
 
 for node in range(nodes):
     if visited[node]:
