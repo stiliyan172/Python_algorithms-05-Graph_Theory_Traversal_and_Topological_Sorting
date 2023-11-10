@@ -6,8 +6,7 @@ for node in range(nodes):
     children = [] if line == '' else [int(x) for x in line.split()]
     graph.append(children)
 
-visited = [False] * nodes
-
+visited = [False] * nodes
 def dfs(node, graph, visited, component):
     if visited[node]:
         return
@@ -17,6 +16,7 @@ def dfs(node, graph, visited, component):
         dfs(child, graph, visited, component)
 
     component.append(node)
+
 
 for node in range(nodes):
     if visited[node]:
