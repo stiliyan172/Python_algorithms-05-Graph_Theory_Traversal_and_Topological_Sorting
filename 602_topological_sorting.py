@@ -16,6 +16,7 @@ def find_note_without_dependencies(dependencies_by_node):
         if dependencies == 0:
             return node
     return None
+
 
 nodes = int(input())
 
